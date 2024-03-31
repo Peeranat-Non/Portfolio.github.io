@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: #FA4616;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #2eafec;
+  background: #FFC72C;
   color: #fff;
 }
 .back-to-top.active {
@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #FA4616;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #FA4616;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -281,7 +281,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #FA4616;
   bottom: 0;
   left: 0;
 }
@@ -299,7 +299,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #FA4616;
   bottom: 0;
   left: 0;
 }
@@ -330,7 +330,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #FA4616;
   line-height: 0;
 }
 .about .content p:last-child {
@@ -419,7 +419,7 @@ section {
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -428,7 +428,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #FA4616;
   position: relative;
 }
 .resume .resume-item h4 {
@@ -466,13 +466,15 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #FA4616;
 }
 
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .work-box {
+  
+  height: 360px;
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -483,6 +485,8 @@ section {
 }
 
 .work-img {
+  height: 220px;
+
   display: block;
   overflow: hidden;
 }
@@ -491,7 +495,7 @@ section {
 }
 
 .work-content {
-  padding: 2rem 3% 1rem 4%;
+  padding: 1rem 3% 1rem 4%;
 }
 .work-content .w-more {
   color: #4e4e4e;
@@ -540,7 +544,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #FA4616;
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
