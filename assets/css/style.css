@@ -239,13 +239,16 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 
 /* ===== Project card v2: full 1907x1015 image, text shifted right, stacked black shadow on hover ===== */
 .proj{grid-template-columns:58fr 42fr;transition:box-shadow .3s var(--ease),transform .3s var(--ease),border-color .3s}
-.proj__media{aspect-ratio:1907/1015;min-height:0;background:var(--paper-2)}
-.proj__media img{object-fit:contain}
+.proj__media{aspect-ratio:1907/1015;min-height:0;align-self:stretch;background:var(--paper-2)}
+.proj__media img{object-fit:contain;object-position:center top}
 .proj:hover{border-color:#000;transform:translate(-6px,-6px);box-shadow:0 0 0 1px #000,10px 10px 0 #000}
 .proj:hover .proj__media{border-right-color:#000}
 .proj:hover .proj__media img{transform:none}
-.proj__body{padding:clamp(20px,2.6vw,36px);gap:14px}
-.proj h3{font-size:clamp(26px,3.2vw,42px)}
+.proj__body{padding:clamp(14px,1.8vw,24px) clamp(16px,2.2vw,28px);gap:8px;justify-content:space-between}
+.proj h3{font-size:clamp(24px,2.8vw,36px);line-height:1.1}
+.proj p{font-size:14px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.proj .meta{padding:8px 0;gap:6px 16px}
+.proj .meta dd{margin:0}
 .proj__top{gap:12px}
 @media(max-width:860px){.proj{grid-template-columns:1fr}.proj__media{border-right:0;border-bottom:1px solid var(--line)}.proj:hover .proj__media{border-bottom-color:#000}}
 
