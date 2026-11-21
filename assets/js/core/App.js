@@ -14,7 +14,7 @@ export class App {
     this.components = [
       new Navbar(nav, "P.A."),
       new AboutSection(profile),
-      new ProjectGallery(github, `https://github.com/${githubConfig.username}`),
+      new ProjectGallery(github, `https://github.com/${githubConfig.username}`, githubConfig.images),
       new ActivitySection(activities),
       new EducationSection(education),
       new CertificateSection(certificates),

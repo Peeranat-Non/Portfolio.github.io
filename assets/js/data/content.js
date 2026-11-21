@@ -5,7 +5,10 @@ const C = (n, ext = "jpg") => `assets/img/Certificate/Certificate-${n}.${ext}`;
 export const githubConfig = {
   username: "Peeranat-Non",
   featured: [],   // ชื่อ repo ที่อยากให้ขึ้นก่อน เช่น ["my-best-project"]
-  exclude: [],    // ชื่อ repo ที่ไม่อยากแสดง
+  exclude: [],
+  // กำหนดรูปเอง (ไม่บังคับ): { "ชื่อ repo": "assets/img/projects/xxx.jpg" }
+  // ถ้าไม่ตั้ง เว็บจะหาไฟล์ assets/img/projects/<ชื่อ repo>.jpg|png|webp ให้อัตโนมัติ
+  images: {},    // ชื่อ repo ที่ไม่อยากแสดง
 };
 
 export const nav = [

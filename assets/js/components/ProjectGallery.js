@@ -2,10 +2,11 @@ import { Component } from "../core/Component.js";
 
 /** Renders GitHub projects as a bordered grid with language filters. */
 export class ProjectGallery extends Component {
-  constructor(service, githubUrl) {
+  constructor(service, githubUrl, images = {}) {
     super("#projectGrid");
     this.service = service;
     this.githubUrl = githubUrl;
+    this.images = images;
     this.filtersRoot = document.querySelector("#filters");
     this.projects = [];
     this.active = "All";
@@ -48,7 +49,7 @@ export class ProjectGallery extends Component {
       <article class="proj reveal">
         <div class="proj__media">
           <div class="proj__ph">${Component.esc(p.name[0].toUpperCase())}</div>
-          ${p.image ? `<img src="${Component.esc(p.image)}" alt="" loading="lazy" onerror="this.remove()">` : ""}
+          <img data-srcs="${Component.esc(JSON.stringify(this.#imageCandidates(p)))}" alt="" loading="lazy">
         </div>
         <div class="proj__body">
           <div class="proj__top"><span class="label">${String(i + 1).padStart(2, "0")}</span><span class="label">${p.year}</span></div>
@@ -64,6 +65,23 @@ export class ProjectGallery extends Component {
           </div>
         </div>
       </article>`).join("");
+    this.#bindImages();
     document.dispatchEvent(new CustomEvent("rendered"));
+  }
+
+  /** Priority: images{} in content.js -> assets/img/projects/<repo>.(jpg|png|webp) -> GitHub preview. */
+  #imageCandidates(p) {
+    const base = `assets/img/projects/${encodeURIComponent(p.name)}`;
+    return [this.images[p.name], `${base}.jpg`, `${base}.png`, `${base}.webp`, p.image].filter(Boolean);
+  }
+
+  /** Tries each candidate in order; removes the <img> (showing the letter placeholder) if all fail. */
+  #bindImages() {
+    this.root.querySelectorAll("img[data-srcs]").forEach(img => {
+      const list = JSON.parse(img.dataset.srcs);
+      let i = 0;
+      img.addEventListener("error", () => { i += 1; i < list.length ? (img.src = list[i]) : img.remove(); });
+      img.src = list[0];
+    });
   }
 }
