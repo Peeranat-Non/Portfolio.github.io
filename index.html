@@ -1,628 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="th">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Profile Mr.Peeranat Anunteratat</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Peeranat Anunteratat — Portfolio</title>
+<meta name="description" content="Portfolio ของ พีรณัฐ อนันต์ธีรทัต — Web Developer & Graphic Designer">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Thai:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+<div id="progress"></div>
+<div class="loader" aria-hidden="true"><span>Peeranat A.</span><i></i></div>
+<header class="nav" id="navbar"></header>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profile.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Peeranat Anunteratat</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://github.com/Peeranat-Non" class="github"><i class="bx bxl-github"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100014888114137" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/non_peeranat/" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://twitter.com/Peeranat_anu25" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.linkedin.com/in/peeranat-anunteratat/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
+<main>
+  <section class="hero" id="hero">
+    <div class="hero__text">
+      <p class="label label--live fade">Portfolio — 2026</p>
+      <h1 class="display"><span class="line"><span>Peeranat</span></span><span class="line"><span style="--d:.12s"><em>Anunteratat</em></span></span></h1>
+      <p class="hero__sub fade" id="heroSub" style="--d:.3s"></p>
+      <div class="hero__cta fade" style="--d:.45s">
+        <a class="btn" href="#projects">ดูผลงาน <span class="btn__dot">↓</span></a>
+        <a class="btn btn--ghost" href="#contact">ติดต่อ <span class="btn__dot">→</span></a>
       </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Education</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
     </div>
-  </header><!-- End Header -->
+    <figure class="arch" data-parallax="-0.06"><img src="assets/img/profile.jpg" alt="Peeranat Anunteratat"></figure>
+  </section>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Mr.Peeranat Anunteratat</h1>
-      <p>I'm <span class="typed" data-typed-items="Student, DEK67"></span></p>
+  <div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee"></div></div>
+
+  <section class="section" id="about">
+    <header class="section__head reveal"><span class="label">01</span><h2>About</h2></header>
+    <div class="about">
+      <p class="about__lead" id="aboutLead"></p>
+      <dl class="facts" id="facts"></dl>
     </div>
-  </section><!-- End Hero -->
+    <div class="stats" id="stats"></div>
+    <ul class="skills" id="skills"></ul>
+    <figure class="campus reveal"><img src="assets/img/sit.png" alt="คณะเทคโนโลยีสารสนเทศ มจธ. บางมด" loading="lazy"><figcaption class="label">เป้าหมาย — SIT, KMUTT บางมด</figcaption></figure>
+  </section>
 
-  <main id="main">
+  <section class="section" id="projects">
+    <header class="section__head reveal"><span class="label">02</span><h2>Projects</h2></header>
+    <p class="section__note">โปรเจกต์ที่พัฒนาและเก็บไว้บน GitHub</p>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="projectGrid"></div>
+  </section>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+  <section class="section" id="works">
+    <header class="section__head reveal"><span class="label">03</span><h2>Activities</h2></header>
+    <ol class="index" id="activities"></ol>
+  </section>
 
-        <div class="section-title">
-          <h1>About me</h1>
-          <p>👨‍💻 สวัสดีครับผม พีรณัฐ อนันต์ธีรทัต หรือ นนท์ เป็นนักศึกษาที่มีความชื่นชอบและหลงไหลในการเขียนโปรแกรม มีความสนใจในเรื่องของเทคโนโลยีข่าวสารใหม่ ๆ และพัฒนาทักษะอยู่เสมอทั้งในด้าน Hard Skills / Soft Skills ผมมีเป้าหมายคือการเข้าศึกษาที่ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี คณะเทคโนโลยีสารสนเทศ สาขาเทคโนโลยีสารสนเทศ  หรือ SIT บางมด โดยเว็บไซต์นี้จัดทำขึ้นเพื่อเก็บรวบรวมผลงานต่าง ๆ เพื่อใช้การยื่นสมัครในรอบ Active Recruitment ผมเป็น DEK67 กำลังเตรียมตัวสอบเข้ามหาวิทยาลัยในคณะ/สาขาที่ใฝ่ฝัน ถึงแม้ว่าผมจะเรียนจบด้วยวุฒิปวช.ความรู้ด้านวิชาการอาจไม่แน่นเท่าสายสามัญ แต่ผมพร้อมที่จะแข่งขันกับคนอื่น ๆ และผมขอขอบคุณที่ในปีนี้เปิดรับวุฒิปวช.ทำให้ผมอยากไขว่คว้าโอกาสนี้ไว้และทำให้เต็มที่ที่สุดครับ ขอบคุณที่รับไว้พิจณานะครับ</p>
-        </div>
+  <section class="section" id="education">
+    <header class="section__head reveal"><span class="label">04</span><h2>Education</h2></header>
+    <ol class="timeline" id="education-list"></ol>
+  </section>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>ข้อมูลประวัติส่วนตัว</h3>
-            <p class="">
-              ข้อมูลประวัติส่วนตัวโดยพื้นฐานทั่วไป
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>ชื่อ-นามสกุล:</strong> <span>นายพีรณัฐ อนันต์ธีรทัต</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>ชื่อเล่น:</strong> <span>นนท์</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>วันเกิด:</strong> <span>25 กันยายน 2547</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>อายุ:</strong> <span>19 ปี</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>เพศ:</strong> <span>ชาย</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>สัญชาติ:</strong> <span>ไทย</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>ศาสนา:</strong> <span>พุทธ</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>ส่วนสูง:</strong> <span>173 cm.</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>น้ำหนัก:</strong> <span>55 kg.</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>สถานะ:</strong> <span>โสด</span></li>
-	                <li><i class="bi bi-chevron-right"></i> <strong>อาชีพ:</strong> <span>นักศึกษา</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>ความสามารถพิเศษ:</strong> <span>Graphic Design, Coding</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>เบอร์โทร:</strong> <span>094 406 2047</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>peeranat.anu25@gmail.com</span></li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              
-            </p>
-          </div>
-        </div>
+  <section class="section" id="certificates">
+    <header class="section__head reveal"><span class="label">05</span><h2>Certificates</h2></header>
+    <div class="certs" id="certs"></div>
+  </section>
 
-      </div>
-    </section><!-- End About Section -->
+  <section class="section section--contact" id="contact">
+    <header class="section__head reveal"><span class="label">06</span><h2>Contact</h2></header>
+    <a class="mail display" id="mail"></a>
+    <p class="contact__line"><span class="label">Call</span> <span id="phone"></span></p>
+    <p class="contact__line"><span class="label">Location</span> <span id="addr"></span></p>
+    <div class="socials" id="socials"></div>
+  </section>
+</main>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
+<footer class="footer"><span class="label">© Peeranat Anunteratat</span><a class="label" href="#hero">กลับด้านบน ↑</a></footer>
 
-        <div class="section-title">
-          <h1>Skills</h1>
-          <p>ทักษะความสามารถที่มีและประสบการณ์การเขียนโปรแกรมในภาษาต่างๆ รวมถึงโปรแกรมที่สามารถใช้งานได้</p>
-        </div>
-        <img align="right" alt="Rafa-pic" height="180" style="border-radius:50px;" src="https://media4.giphy.com/media/Lg6vO9CNlQmUna1c5i/giphy.gif?cid=ecf05e47ivemwnnvn38iwi1o379snpv3unvpym4ozswbb33g&rid=giphy.gif&ct=s">
-
-
-        <div style="display: inline_block"><br>
-          <img align="center" alt="Rafa-HTML" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-          <img align="center" alt="Rafa-HTML" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-          <img align="center" alt="Rafa-CSS" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
-          <img align="center" alt="Rafa-CSS" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
-          <img align="center" alt="Rafa-CSS" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
-          <img align="center" alt="Rafa-CSS" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
-          <img align="center" alt="Rafa-Python" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-          <img align="center" alt="Rafa-C" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg">
-          <img align="center" alt="Rafa-C++" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
-          <img align="center" alt="Rafa-Flutter" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg">
-          <img align="center" alt="Rafa-vscode" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
-          <img align="center" alt="Rafa-vscode" height="50" width="60" src="https://icongr.am/devicon/wordpress-plain.svg?size=128&color=currentColor" /><br/>
-          <p>
-          </p>
-          <img align="center" alt="Rafa-vscode" height="50" width="50" src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" />
-          <img align="center" alt="Rafa-vscode" height="50" width="50" src="https://cdn-icons-png.flaticon.com/512/5968/5968472.png" />
-          <img align="center" alt="Rafa-vscode" height="50" width="50" src="https://cdn-icons-png.flaticon.com/512/5968/5968525.png" />
-          <img align="center" alt="Rafa-vscode" height="50" width="50" src="https://cdn-icons-png.flaticon.com/512/5968/5968514.png" />
-          <img align="center" alt="Rafa-vscode" height="50" width="50" src="https://cdn-icons-png.flaticon.com/512/5968/5968428.png" />
-          <img align="center" alt="Rafa-vscode" height="50" width="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Adobe_Media_Encoder_Icon.svg/768px-Adobe_Media_Encoder_Icon.svg.png?20200618113117" />
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <!-- <div class="section-title">
-          <h1>...</h1>
-        </div> -->
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">ประวัติการศึกษา</h3>
-            <div class="resume-item">
-              <h4>โรงเรียนไทยนิยมสงเคราะห์ ประถมศึกษา</h4>
-              <h5>2554 - 2559</h5>
-              <p>สำเร็จการศึกษาในระดับชั้นประถมศึกษาปีที่ 1 - 6 ห้องเรียนปกติ จากโรงเรียนไทยนิยมสงเคราะห์ GPA.3.12</p>
-            </div>
-            <div class="resume-item">
-              <h4>โรงเรียนไทยนิยมสงเคราะห์ มัธยมศึกษา</h4>
-              <h5>2560 - 2562</h5>
-              <p>สำเร็จการศึกษาในระดับชั้นมัธยมศึกษาปีที่ 1 - 3 ห้องเรียนปกติ จากโรงเรียนไทยนิยมสงเคราะห์ GPA.3.56</p>
-            </div>
-            <div class="resume-item">
-              <h4>วิทยาลัยเทคโนโลยีสยามบริหารธุรกิจ สะพานใหม่</h4>
-              <h5>2563 - 2565</h5>
-              <p>สำเร็จการศึกษาในระดับชั้นประกาศนียบัตรวิชาชีพชั้นปีที่ 3 สาขาเทคโนโลยีสารสนเทศ ณ วิทยาลัยเทคโนโลยีสยามบริหารธุรกิจ เกรดเฉลี่ย 6 เทอม GPA.3.90</p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">ประสบการณ์การทำงาน</h3>
-            <div class="resume-item">
-              <h4></h4>
-              <h5>1 มิถุนายน 2565 - 30 กันยายน 2565</h5>
-              <ul>
-                <li>ฝึกงานในตำแหน่ง Web Developer ระดับประกาศนียบัตรวิชาชีพชั้นปีที่ 3 ณ  วิทยาลัยเทคโนโลยีสยามบริหารธุรกิจ สะพานใหม่</li>
-          
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h1>Portfolio</h1>
-        </div>
-        
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Activity/activity-10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Activity/activity-10.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="">
-                    <h2 class="w-title">Infographic Design</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">ได้จัดทำ Infographic Design ในรายวิชาการสร้างภาพเคลื่อนไหว หัวข้อบรรเทาทุกข์บํารุงสุขแก่ราษฎร์ และได้รับรางวัลชนะเลิศอันดับที่ 1 ในกลุ่มระดับชั้นมัธยมศึกษาตอนปลายหรือเทียบเท่า</span> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Activity/activity-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Activity/activity-9.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="">
-                    <h2 class="w-title">ToBeIT'67</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">เข้าร่วมโครงการ ToBeIT'67 เสริมความคิด ติดความรู้ ก้าวสู่ เด็กไอที เป็นค่ายที่จะเป็นการปูพื้นฐานความรู้เบื้องต้นเกี่ยวกับเทคโนโลยีสารสนเทศ</span> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Activity/activity-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Activity/activity-8.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="">
-                    <h2 class="w-title">Huawei Connect 2022</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">ได้มีโอกาสศึกษาดูงาน Huawei Connect 2022 : Unleash Digital ณ ศูนย์การประชุมแห่งชาติสิริกิติ์ โดยงานนี้เปิดโอกาสให้คนที่สนใจเทคโนโลยีร่วมหารือโอกาสที่เกิดขึ้นจากอุตสาหกรรมดิจิทัล</span> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Activity/activity-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Activity/activity-7.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="">
-                    <h2 class="w-title">HACKaTHAILAND</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">เข้าร่วมและศึกษาดูงาน HACKaTHAILAND ณ True Digital Par เป็นโครงการส่งเสริมทักษะดิจิทัลและขับเคลื่อนเศรษฐกิจดิจิทัลของประเทศไทย</span> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Activity/activity-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Activity/activity-2.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="">
-                    <h2 class="w-title">Database System</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">เรียนรู้กระบวนการ Normalization พื้นฐานที่สำคัญเพื่อปรับปรุงโครงสร้างข้อมูล สำหรับฐานข้อมูล</span> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Activity/activity-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Activity/activity-5.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="">
-                    <h2 class="w-title">Interlink Campus tour 2020</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">เข้าร่วมอบรม L﻿ink Campus Cabling 2020 การต่อสายสัญญาณเบื้องต้นในด้านเทคโนโลยีเครือข่ายเพื่อเตรียมความก่อนเปิดภาคเรียน</span> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Activity/activity-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Activity/activity-3.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="">
-                    <h2 class="w-title">Smart Tech</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">กิจกรรม Workshop เสริมความรู้ทักษะด้านเทคโนโลยีสารสนเทศ </span> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Activity/activity-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Activity/activity-4.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="">
-                    <h2 class="w-title">การวาดภาพการ์ตูนดิจิทัลในงานเกม</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">กิจกรรม Workshop เสริมเทคนิคการวาดภาพการ์ตูน​ให้สอดคล้องกับหัวข้อในงานเกม</span> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Activity/activity-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Activity/activity-6.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="">
-                    <h2 class="w-title">การประกวดวาดภาพระบายสีตัวละครในเรื่องพระอภัยมณี</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">ได้รับรางวัลชมเชย ในกลุ่มวาดภาพด้วยโปรแกรมคอมพิวเตอร์</span> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="container">
-
-      <div class="section-title">
-        <h1>Certificate</h1>
-      </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Activity">
-            <div class="portfolio-wrap">
-              <img src="assets/img/Certificate/Certificate-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Google Technical Support Fundamentals</h4>
-                <p></p>
-                <div class="portfolio-links">
-                  <a href="assets/img/Certificate/Certificate-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Activity">
-            <div class="portfolio-wrap">
-              <img src="assets/img/Certificate/Certificate-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Programming Foundations with JavaScript, HTML and CSS</h4>
-                <p></p>
-                <div class="portfolio-links">
-                  <a href="assets/img/Certificate/Certificate-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Activity">
-            <div class="portfolio-wrap">
-              <img src="assets/img/Certificate/Certificate-3.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>ความรู้เบื้องต้นเกี่ยวกับเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</h4>
-                <p></p>
-                <div class="portfolio-links">
-                  <a href="assets/img/Certificate/Certificate-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Activity">
-            <div class="portfolio-wrap">
-              <img src="assets/img/Certificate/Certificate-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Kibo Robot Programming challenge 2022</h4>
-                <p></p>
-                <div class="portfolio-links">
-                  <a href="assets/img/Certificate/Certificate-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Activity">
-            <div class="portfolio-wrap">
-              <img src="assets/img/Certificate/Certificate-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>การออกแบบ User Experience เพื่อพัฒนาแอพพลิเคชั่นบนโทรศัพท์มือถือ</h4>
-                <p></p>
-                <div class="portfolio-links">
-                  <a href="assets/img/Certificate/Certificate-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Activity">
-            <div class="portfolio-wrap">
-              <img src="assets/img/Certificate/Certificate-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>MOBILE APPLICATION DESIGN (FIGMA) ระดับกลาง โครงการ HACKaTHAILAND</h4>
-                <p></p>
-                <div class="portfolio-links">
-                  <a href="assets/img/Certificate/Certificate-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Activity">
-            <div class="portfolio-wrap">
-              <img src="assets/img/Certificate/Certificate-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>FUNDAMENTAL DATA ANALYTICS ระดับเบื้องต้น โครงการ HACKaTHAILAND</h4>
-                <p></p>
-                <div class="portfolio-links">
-                  <a href="assets/img/Certificate/Certificate-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Activity">
-            <div class="portfolio-wrap">
-              <img src="assets/img/Certificate/Certificate-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>BACK-END-DEVELOPING ระดับกลาง โครงการ HACKaTHAILAND</h4>
-                <p></p>
-                <div class="portfolio-links">
-                  <a href="assets/img/Certificate/Certificate-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Activity">
-            <div class="portfolio-wrap">
-              <img src="assets/img/Certificate/Certificate-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Course DevLab 3 จัดโดย Borntodev</h4>
-                <p></p>
-                <div class="portfolio-links">
-                  <a href="assets/img/Certificate/Certificate-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Activity">
-            <div class="portfolio-wrap">
-              <img src="assets/img/Certificate/Certificate-10.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Course DevLab 3 จัดโดย Borntodev</h4>
-                <p></p>
-                <div class="portfolio-links">
-                  <a href="assets/img/Certificate/Certificate-10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Activity">
-            <div class="portfolio-wrap">
-              <img src="assets/img/Certificate/Certificate-13.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>AI Foundations: Imagine Cup Junior</h4>
-                <p></p>
-                <div class="portfolio-links">
-                  <a href="assets/img/Certificate/Certificate-13.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Activity">
-            <div class="portfolio-wrap">
-              <img src="assets/img/Certificate/Certificate-11.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>รางวัลชนะเลิศ Infographic Design หัวข้อ บรรเทาทุกข์บำรุงสุขแก่ราษฎร์ภายใต้พระราชกรณียกิจ</h4>
-                <p></p>
-                <div class="portfolio-links">
-                  <a href="assets/img/Certificate/Certificate-11.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bi bi-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h1>Contact</h1>
-          <p>สำหรับช่องทางการติดต่อสามาถรถติดต่อสอบถามได้ตามรายละเอียดข้างต้นดังนี้ครับ</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>367/3 ซอยโรงหนังกรุงสยาม ถนนพหลโยธิน แขวงอนุสาวรีย์ เขตบางเขน กรุงเทพมหานคร 10220</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>peeranat.anu25@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>094-406-2047</p>
-              </div>
-
-              <iframe src="https://maps.google.com/maps?q=%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B8%AA%E0%B8%A2%E0%B8%B2%E0%B8%A1&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 420px;" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <!-- Vendor JS Files -->
-
-  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-  <script>
-    kofiWidgetOverlay.draw('peeranat', {
-      'type': 'floating-chat',
-      'floating-chat.donateButton.text': 'Support me',
-      'floating-chat.donateButton.background-color': '#FA4616',
-      'floating-chat.donateButton.text-color': '#fff'
-    });
-  </script>
-  
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+<script type="module" src="assets/js/main.js"></script>
 </body>
-
 </html>
