@@ -1,1 +1,26 @@
-
+name: Update projects
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/fetch-projects.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add assets/data/projects.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: sync projects"
+            git push
+          fi
