@@ -236,3 +236,28 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 .section,.footer{border-top:0;background:linear-gradient(var(--line),var(--line)) center top/min(var(--max),calc(100% - 2*var(--pad))) 1px no-repeat}
 .footer{padding-block:32px}
 @media(max-width:760px){:root{--pad:24px}}
+
+/* ===== Project card v2: full 1907x1015 image, text shifted right, stacked black shadow on hover ===== */
+.proj{grid-template-columns:58fr 42fr;transition:box-shadow .3s var(--ease),transform .3s var(--ease),border-color .3s}
+.proj__media{aspect-ratio:1907/1015;min-height:0;background:var(--paper-2)}
+.proj__media img{object-fit:contain}
+.proj:hover{border-color:#000;transform:translate(-6px,-6px);box-shadow:0 0 0 1px #000,10px 10px 0 #000}
+.proj:hover .proj__media{border-right-color:#000}
+.proj:hover .proj__media img{transform:none}
+.proj__body{padding:clamp(20px,2.6vw,36px);gap:14px}
+.proj h3{font-size:clamp(26px,3.2vw,42px)}
+.proj__top{gap:12px}
+@media(max-width:860px){.proj{grid-template-columns:1fr}.proj__media{border-right:0;border-bottom:1px solid var(--line)}.proj:hover .proj__media{border-bottom-color:#000}}
+
+/* ===== Activities v2: image fades out from the LEFT of the title on hover ===== */
+@media(min-width:861px){
+  .index li{grid-template-columns:60px 0 1fr 1.4fr;gap:0;align-items:center;min-height:150px;transition:grid-template-columns .6s var(--ease)}
+  .index li:hover{grid-template-columns:60px 190px 1fr 1.4fr}
+  .index li::before{grid-column:1;grid-row:1;padding-top:0}
+  .index li>img{grid-column:2;grid-row:1;position:static;width:160px;height:90px;aspect-ratio:auto;margin:0;border:1px solid var(--ink);border-radius:12px;
+    opacity:0;transform:translateX(-28px);clip-path:inset(0 100% 0 0);transition:opacity .5s var(--ease),transform .6s var(--ease),clip-path .6s var(--ease)}
+  .index li:hover>img{opacity:1;transform:none;clip-path:inset(0)}
+  .index li>h3{grid-column:3;grid-row:1;margin-left:32px}
+  .index li:hover>h3{transform:none}
+  .index li>p{grid-column:4;grid-row:1;margin-left:32px}
+}
