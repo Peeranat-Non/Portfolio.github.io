@@ -1,0 +1,213 @@
+[
+  {
+    "name": "Portfolio.github.io",
+    "description": null,
+    "language": "HTML",
+    "tools": [
+      "CSS",
+      "JavaScript"
+    ],
+    "url": "https://github.com/Peeranat-Non/Portfolio.github.io",
+    "homepage": null,
+    "stars": 0,
+    "updated": "2026-11-21T17:30:37Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/Portfolio.github.io"
+  },
+  {
+    "name": "LegoShopDB-POS",
+    "description": "Database Programming - ระบบ POS และการจัดการสินค้าคงคลังสำหรับร้านขายเลโก้ พัฒนาด้วยสถาปัตยกรรม Windows Forms (.NET) ร่วมกับ Entity Framework Cor",
+    "language": "C#",
+    "tools": [],
+    "url": "https://github.com/Peeranat-Non/LegoShopDB-POS",
+    "homepage": "",
+    "stars": 0,
+    "updated": "2026-11-21T16:04:53Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/LegoShopDB-POS"
+  },
+  {
+    "name": "ShabuPOS-System",
+    "description": "DBMS - ระบบบริหารจัดการร้านอาหารประเภทชาบูและบุฟเฟต์ ครอบคลุมทั้งการจัดการหน้าร้าน และระบบบัญชีหลังบ้าน",
+    "language": "C#",
+    "tools": [],
+    "url": "https://github.com/Peeranat-Non/ShabuPOS-System",
+    "homepage": "",
+    "stars": 0,
+    "updated": "2026-11-21T16:04:29Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/ShabuPOS-System"
+  },
+  {
+    "name": "Web-Shabu-Ordering",
+    "description": "DBMS - ส่วนหน้าจอผู้ใช้งาน (Frontend) สำหรับลูกค้าสั่งอาหารผ่านเว็บแอปพลิเคชัน พัฒนาด้วย Next.js",
+    "language": "TypeScript",
+    "tools": [
+      "CSS",
+      "JavaScript"
+    ],
+    "url": "https://github.com/Peeranat-Non/Web-Shabu-Ordering",
+    "homepage": "",
+    "stars": 0,
+    "updated": "2026-11-21T16:04:14Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/Web-Shabu-Ordering"
+  },
+  {
+    "name": "Mine_Sweeper_Modified",
+    "description": "COMP PROG FOR MATH - โปรเจกต์นี้คือเกม Minesweeper ที่เขียนด้วยภาษา C#",
+    "language": "C#",
+    "tools": [],
+    "url": "https://github.com/Peeranat-Non/Mine_Sweeper_Modified",
+    "homepage": "",
+    "stars": 0,
+    "updated": "2026-11-21T15:54:14Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/Mine_Sweeper_Modified"
+  },
+  {
+    "name": "resume10291.github.io",
+    "description": "เว็บไซต์ CV/Resume ส่วนตัว",
+    "language": "JavaScript",
+    "tools": [
+      "CSS",
+      "HTML"
+    ],
+    "url": "https://github.com/Peeranat-Non/resume10291.github.io",
+    "homepage": "https://resume10291.vercel.app",
+    "stars": 0,
+    "updated": "2026-11-21T15:33:55Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/resume10291.github.io"
+  },
+  {
+    "name": "Project-SA-opd-smart-health",
+    "description": "System Analysis and Design (SA) - Smart Health Information System - OPD Nuclear Medicine",
+    "language": null,
+    "tools": [],
+    "url": "https://github.com/Peeranat-Non/Project-SA-opd-smart-health",
+    "homepage": "",
+    "stars": 0,
+    "updated": "2026-11-21T15:01:19Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/Project-SA-opd-smart-health"
+  },
+  {
+    "name": "Where-is-the-duck-going",
+    "description": "เกมนี้สร้างด้วยการสั่งงาน Large Language Model (LLM) ผ่าน Prompt ที่ทีมออกแบบเอง เป็นส่วนหนึ่งของโครงงานวิชา Generative AI and Prompt Engineering",
+    "language": "JavaScript",
+    "tools": [
+      "CSS",
+      "HTML"
+    ],
+    "url": "https://github.com/Peeranat-Non/Where-is-the-duck-going",
+    "homepage": "https://where-is-the-duck-going-ten.vercel.app",
+    "stars": 0,
+    "updated": "2026-10-04T15:50:35Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/Where-is-the-duck-going"
+  },
+  {
+    "name": "im-chatapp",
+    "description": "Data Communication And Networking - พัฒนาแอปพลิเคชันสำหรับติดต่อสื่อสารแบบ Instant Messaging (IM) แบบ Real-time ผ่าน Protocol การสื่อสารข้อมูล",
+    "language": "JavaScript",
+    "tools": [
+      "HTML"
+    ],
+    "url": "https://github.com/Peeranat-Non/im-chatapp",
+    "homepage": "",
+    "stars": 0,
+    "updated": "2026-09-28T20:05:16Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/im-chatapp"
+  },
+  {
+    "name": "Sleep-Cycle-Journal-",
+    "description": "เป็น web app หน้าเดียวด้วย ช่วยให้ผู้ใช้วางแผนเวลานอนที่เหมาะสมและบันทึกคุณภาพการนอนประจำวันของตัวเอง",
+    "language": "TypeScript",
+    "tools": [
+      "HTML",
+      "CSS"
+    ],
+    "url": "https://github.com/Peeranat-Non/Sleep-Cycle-Journal-",
+    "homepage": "https://peeranat10291.vercel.app/",
+    "stars": 0,
+    "updated": "2026-09-02T15:10:23Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/Sleep-Cycle-Journal-"
+  },
+  {
+    "name": "Project_Group3_Sec3",
+    "description": null,
+    "language": "Java",
+    "tools": [],
+    "url": "https://github.com/Peeranat-Non/Project_Group3_Sec3",
+    "homepage": null,
+    "stars": 0,
+    "updated": "2026-04-04T11:44:58Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/Project_Group3_Sec3"
+  },
+  {
+    "name": "Project-IOT-Water-Line",
+    "description": "ระบบตรวจวัดระดับน้ำด้วย IoT เพื่อช่วยตรวจสอบปริมาณน้ำในถังแบบ Real-time",
+    "language": "C++",
+    "tools": [],
+    "url": "https://github.com/Peeranat-Non/Project-IOT-Water-Line",
+    "homepage": "",
+    "stars": 0,
+    "updated": "2026-03-13T21:12:37Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/Project-IOT-Water-Line"
+  },
+  {
+    "name": "Project-Web-Sbac",
+    "description": null,
+    "language": "JavaScript",
+    "tools": [
+      "PHP",
+      "SCSS",
+      "CSS",
+      "Hack"
+    ],
+    "url": "https://github.com/Peeranat-Non/Project-Web-Sbac",
+    "homepage": null,
+    "stars": 0,
+    "updated": "2024-04-04T16:24:12Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/Project-Web-Sbac"
+  },
+  {
+    "name": "Flutter-Login",
+    "description": null,
+    "language": "Dart",
+    "tools": [
+      "HTML",
+      "Objective-C",
+      "Java",
+      "Kotlin",
+      "Swift"
+    ],
+    "url": "https://github.com/Peeranat-Non/Flutter-Login",
+    "homepage": null,
+    "stars": 0,
+    "updated": "2024-04-04T16:10:04Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/Flutter-Login"
+  },
+  {
+    "name": "Arduino-Smart-Robot-Car",
+    "description": null,
+    "language": "C++",
+    "tools": [
+      "C",
+      "Python",
+      "Java",
+      "Shell",
+      "Makefile",
+      "Batchfile"
+    ],
+    "url": "https://github.com/Peeranat-Non/Arduino-Smart-Robot-Car",
+    "homepage": null,
+    "stars": 0,
+    "updated": "2024-03-28T10:27:07Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/Arduino-Smart-Robot-Car"
+  },
+  {
+    "name": "Project-Game-Test",
+    "description": null,
+    "language": "C#",
+    "tools": [],
+    "url": "https://github.com/Peeranat-Non/Project-Game-Test",
+    "homepage": null,
+    "stars": 0,
+    "updated": "2024-03-28T09:52:59Z",
+    "image": "https://opengraph.githubassets.com/1/Peeranat-Non/Project-Game-Test"
+  }
+]
