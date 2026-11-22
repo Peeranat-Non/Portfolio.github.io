@@ -5,6 +5,11 @@ const C = (n, ext = "jpg") => `assets/img/Certificate/Certificate-${n}.${ext}`;
 /** ภาพย่อ (โหลดเร็ว) อยู่ใน assets/img/thumbs/ — ภาพเต็มใช้ตอนกดขยาย */
 const thumb = p => p.replace("assets/img/", "assets/img/thumbs/").replace(/\.png$/, ".jpg");
 
+/** ซ่อนหัวข้อที่ไม่ต้องการ (ข้อมูลยังอยู่ ลบชื่อออกเมื่ออยากให้กลับมา)
+ *  ชื่อที่ใช้ได้: "about" "projects" "works" "education" "certificates" "contact"
+ *  เช่น hiddenSections = ["certificates", "education"] */
+export const hiddenSections = [];
+
 export const githubConfig = {
   username: "Peeranat-Non",
   // เลือกเฉพาะโปรเจกต์ที่จะโชว์ (เรียงตามลำดับที่ใส่) เช่น ["LegoShopDB-POS", "Portfolio.github.io"]
