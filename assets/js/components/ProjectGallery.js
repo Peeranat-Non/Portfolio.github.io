@@ -56,7 +56,8 @@ export class ProjectGallery extends Component {
           <h3>${Component.esc(p.title)}</h3>
           <p>${Component.esc(p.summary)}</p>
           <dl class="meta">
-            <dt class="label">เครื่องมือ</dt><dd>${tags(p.tools)}</dd>
+            <dt class="label">Tools</dt><dd>${tags([].concat(p.language || []), "tag--lang")}</dd>
+            <dt class="label"></dt><dd>${tags(p.tools)}</dd>
           </dl>
           <div class="proj__actions">
             ${Component.button("Source Code", p.url, { small: true })}
