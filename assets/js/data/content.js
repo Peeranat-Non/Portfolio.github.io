@@ -73,20 +73,20 @@ export const education = [
   { years: "2554 — 2559", school: "โรงเรียนไทยนิยมสงเคราะห์ (ประถมศึกษา)", text: "ประถมศึกษาปีที่ 1 — 6 · GPA 3.12" },
 ];
 
-// export const certificates = [
-//   { title: "Google Technical Support Fundamentals", img: C(1) },
-//   { title: "Programming Foundations with JavaScript, HTML and CSS", img: C(2) },
-//   { title: "ความรู้เบื้องต้นด้าน IT — สจล.", img: C(3, "png") },
-//   { title: "Kibo Robot Programming Challenge 2022", img: C(4) },
-//   { title: "UX Design สำหรับแอปพลิเคชันบนมือถือ", img: C(5) },
-//   { title: "Mobile Application Design (Figma) — HACKaTHAILAND", img: C(6) },
-//   { title: "Fundamental Data Analytics — HACKaTHAILAND", img: C(7) },
-//   { title: "Back-End Developing — HACKaTHAILAND", img: C(8) },
-//   { title: "DevLab 3 — Borntodev", img: C(9) },
-//   { title: "DevLab 3 — Borntodev", img: C(10) },
-//   { title: "AI Foundations: Imagine Cup Junior", img: C(13) },
-//   { title: "ชนะเลิศ Infographic Design", img: C(11) },
-// ];
+export const certificates = [
+  { title: "Google Technical Support Fundamentals", img: C(1) },
+  { title: "Programming Foundations with JavaScript, HTML and CSS", img: C(2) },
+  { title: "ความรู้เบื้องต้นด้าน IT — สจล.", img: C(3, "png") },
+  { title: "Kibo Robot Programming Challenge 2022", img: C(4) },
+  { title: "UX Design สำหรับแอปพลิเคชันบนมือถือ", img: C(5) },
+  { title: "Mobile Application Design (Figma) — HACKaTHAILAND", img: C(6) },
+  { title: "Fundamental Data Analytics — HACKaTHAILAND", img: C(7) },
+  { title: "Back-End Developing — HACKaTHAILAND", img: C(8) },
+  { title: "DevLab 3 — Borntodev", img: C(9) },
+  { title: "DevLab 3 — Borntodev", img: C(10) },
+  { title: "AI Foundations: Imagine Cup Junior", img: C(13) },
+  { title: "ชนะเลิศ Infographic Design", img: C(11) },
+];
 
 /** image: ใส่ path รูป เช่น "assets/img/projects/portfolio.jpg" (ถ้าว่างจะแสดงตัวอักษรแทน)
  *  tools: เครื่องมือ/เทคโนโลยีที่ใช้ */
