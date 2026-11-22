@@ -38,25 +38,18 @@ export const nav = [
 
 export const profile = {
   tagline: "Web Developer & Graphic Designer — ออกแบบและสร้างสรรค์งานด้วยโครงสร้างที่เป็นระเบียบ และรายละเอียดที่ใส่ใจ",
-  about: "สวัสดีครับ พีรณัฐ อนันต์ธีรทัต (นนท์) ผมหลงใหลการเขียนโปรแกรมและเทคโนโลยีใหม่ ๆ พัฒนาทักษะทั้ง Hard Skills และ Soft Skills อยู่เสมอ เป้าหมายคือเข้าศึกษาคณะเทคโนโลยีสารสนเทศ สาขาเทคโนโลยีสารสนเทศ (SIT) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี เว็บไซต์นี้รวบรวมผลงานเพื่อประกอบการสมัครรอบ Active Recruitment",
-  facts: [
-    ["ชื่อ-นามสกุล", "นายพีรณัฐ อนันต์ธีรทัต"], ["ชื่อเล่น", "นนท์"],
-    ["วันเกิด", "25 กันยายน 2547 (19 ปี)"], ["สัญชาติ / ศาสนา", "ไทย / พุทธ"],
-    ["การศึกษา", "ปวช. เทคโนโลยีสารสนเทศ · GPA 3.90"],
-    ["ฝึกงาน", "Web Developer · มิ.ย. — ก.ย. 2565"],
-    ["ความสามารถพิเศษ", "Graphic Design, Coding"],
-  ],
+  about: "สวัสดีครับผม นายพีรณัฐ อนันต์ธีรทัต นักศึกษาชั้นปีที่ 3 คณะวิทยาศาสตร์ประยุกต์ สาขา Mathematics with Computer Science มีประสบการณ์จากการทำโปรเจกต์ด้าน full-stack web development และ database design โดยให้ความสำคัญกับการพัฒนาทั้ง front-end และ back-end รวมถึง system analysis ซึ่งรวมถึงการจัดทำเอกสาร SRS นอกจากนี้ผมยังมีความเข้าใจในแนวคิดของ LLM และ Retrieval-Augmented Generation (RAG) ผมสนใจเข้าร่วมโครงการสหกิจศึกษาเป็นระยะเวลา 11 เดือน (พฤษภาคม 2570 – เมษายน 2571) ในตำแหน่ง Software Engineer Intern",
+
   skills: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL", "Python", "C#", "C++", "Flutter", "WordPress", "Figma"],
   stats: [[3.9, "GPA ปวช.", 2], [12, "ใบประกาศนียบัตร"], [9, "กิจกรรมและเวิร์กช็อป"], [1, "รางวัลชนะเลิศ"]],
-  email: "peeranat.anu25@gmail.com",
+  email: "peeranat.anunt@gmail.com",
   phone: "094-406-2047",
-  address: "367/3 ซอยโรงหนังกรุงสยาม ถนนพหลโยธิน แขวงอนุสาวรีย์ เขตบางเขน กรุงเทพมหานคร 10220",
+  address: "Bangkok 10220, Thailand",
   socials: [
     { label: "GitHub", url: "https://github.com/Peeranat-Non" },
-    { label: "LinkedIn", url: "https://www.linkedin.com/in/peeranat-anunteratat/" },
-    { label: "Instagram", url: "https://www.instagram.com/non_peeranat/" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/peeranat-anu/" },
+    { label: "Instagram", url: "https://www.instagram.com/anx_nxn/" },
     { label: "Facebook", url: "https://www.facebook.com/profile.php?id=100014888114137" },
-    { label: "X / Twitter", url: "https://twitter.com/Peeranat_anu25" },
   ],
 };
 
@@ -73,9 +66,9 @@ export const activities = [
 ];
 
 export const education = [
+  { years: "2567 — ปัจจุบัน", school: "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ", text: "คณะวิทยาศาสตร์ประยุกต์ สาขา Mathematics with Computer Science · GPAX 3.11" },
   { years: "2563 — 2565", school: "วิทยาลัยเทคโนโลยีสยามบริหารธุรกิจ สะพานใหม่", text: "ประกาศนียบัตรวิชาชีพ สาขาเทคโนโลยีสารสนเทศ · GPA 3.90 · ฝึกงานตำแหน่ง Web Developer (มิ.ย. — ก.ย. 2565)" },
   { years: "2560 — 2562", school: "โรงเรียนไทยนิยมสงเคราะห์ (มัธยมศึกษา)", text: "มัธยมศึกษาปีที่ 1 — 3 · GPA 3.56" },
-  { years: "2554 — 2559", school: "โรงเรียนไทยนิยมสงเคราะห์ (ประถมศึกษา)", text: "ประถมศึกษาปีที่ 1 — 6 · GPA 3.12" },
 ];
 
 export const certificates = [
