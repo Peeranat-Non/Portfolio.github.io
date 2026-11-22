@@ -37,7 +37,7 @@ export const nav = [
 ];
 
 export const profile = {
-  tagline: "Web Developer & Graphic Designer — ออกแบบและสร้างสรรค์งานด้วยโครงสร้างที่เป็นระเบียบ และรายละเอียดที่ใส่ใจ",
+  tagline: "ชอบเปลี่ยนไอเดียให้เป็นระบบที่ใช้งานได้จริง ใส่ใจทั้งโครงสร้างเบื้องหลังและประสบการณ์ของผู้ใช้งาน",
   about: "สวัสดีครับผม นายพีรณัฐ อนันต์ธีรทัต นักศึกษาชั้นปีที่ 3 คณะวิทยาศาสตร์ประยุกต์ สาขา Mathematics with Computer Science มีประสบการณ์จากการทำโปรเจกต์ด้าน full-stack web development และ database design โดยให้ความสำคัญกับการพัฒนาทั้ง front-end และ back-end รวมถึง system analysis ซึ่งรวมถึงการจัดทำเอกสาร SRS นอกจากนี้ผมยังมีความเข้าใจในแนวคิดของ LLM และ Retrieval-Augmented Generation (RAG) ผมสนใจเข้าร่วมโครงการสหกิจศึกษาเป็นระยะเวลา 11 เดือน (พฤษภาคม 2570 – เมษายน 2571) ในตำแหน่ง Software Engineer Intern",
 
   skills: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL", "Python", "C#", "C++", "Flutter", "WordPress", "Figma"],
