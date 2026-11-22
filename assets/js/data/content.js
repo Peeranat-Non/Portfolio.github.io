@@ -96,4 +96,4 @@ export const fallbackProjects = [
 ];
 
 activities.forEach(a => { a.thumb = thumb(a.img); });
-// certificates.forEach(c => { c.thumb = thumb(c.img); });
+certificates.forEach(c => { c.thumb = thumb(c.img); });
