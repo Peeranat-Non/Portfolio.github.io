@@ -12,7 +12,7 @@ export class App {
     const github = new GitHubService(githubConfig.username, { ...githubConfig, fallback: fallbackProjects });
     this.reveal = new RevealObserver();
     this.components = [
-      new Navbar(nav, "P.A."),
+      new Navbar(nav.filter(n => n.id !== "certificates" || certificates.length), "P.A."),
       new AboutSection(profile),
       new ProjectGallery(github, `https://github.com/${githubConfig.username}`, githubConfig.images),
       new ActivitySection(activities),
@@ -23,7 +23,8 @@ export class App {
     ];
   }
   start() {
-    this.components.forEach(c => c.mount());
+    // one failing section must never blank the whole page
+    this.components.forEach(c => { try { c.mount(); } catch (e) { console.error(e); } });
     this.reveal.scan();
     document.addEventListener("rendered", () => this.reveal.scan());
   }

@@ -36,6 +36,7 @@ export class EducationSection extends Component {
 export class CertificateSection extends Component {
   constructor(items) { super("#certs"); this.items = items; }
   render() {
+    if (!this.items.length) { document.querySelector("#certificates")?.remove(); return; } // no certificates -> hide section
     this.root.innerHTML = this.items.map(c => `
       <a class="cert reveal" href="${Component.esc(c.img)}" data-title="${Component.esc(c.title)}">
         <div class="cert__img"><img src="${Component.esc(c.thumb || c.img)}" alt="" loading="lazy" decoding="async"></div>
