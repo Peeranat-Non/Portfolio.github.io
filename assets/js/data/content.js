@@ -8,7 +8,7 @@ const thumb = p => p.replace("assets/img/", "assets/img/thumbs/").replace(/\.png
 /** ซ่อนหัวข้อที่ไม่ต้องการ (ข้อมูลยังอยู่ ลบชื่อออกเมื่ออยากให้กลับมา)
  *  ชื่อที่ใช้ได้: "about" "projects" "works" "education" "certificates" "contact"
  *  เช่น hiddenSections = ["certificates", "education"] */
-export const hiddenSections = [];
+export const hiddenSections = ["certificates"];
 
 export const githubConfig = {
   username: "Peeranat-Non",
