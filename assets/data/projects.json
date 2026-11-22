@@ -1,7 +1,7 @@
 [
   {
     "name": "Portfolio.github.io",
-    "description": null,
+    "description": "เว็บ Portfolio รวมผลงาน Project และกิจกรรม",
     "language": "JavaScript",
     "tools": [
       "CSS",
@@ -11,7 +11,7 @@
     "url": "https://github.com/Peeranat-Non/Portfolio.github.io",
     "homepage": "https://peeranat-non.github.io/Portfolio.github.io/",
     "stars": 0,
-    "updated": "2026-11-22T18:09:53Z",
+    "updated": "2026-11-22T18:12:39Z",
     "image": "https://opengraph.githubassets.com/1/Peeranat-Non/Portfolio.github.io"
   },
   {
