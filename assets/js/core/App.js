@@ -21,7 +21,7 @@ export class App {
     const github = new GitHubService(githubConfig.username, { ...githubConfig, fallback: fallbackProjects });
     this.reveal = new RevealObserver();
     this.components = [
-      new Navbar(nav.filter(n => !this.hidden.has(n.id)), "P.A."),
+      new Navbar(nav.filter(n => !this.hidden.has(n.id)), "Peeranat Anunteratat"),
       new AboutSection(profile),
       ...(this.hidden.has("projects") ? [] : [new ProjectGallery(github, `https://github.com/${githubConfig.username}`, githubConfig.images)]),
       new ActivitySection(activities ?? []),
