@@ -49,14 +49,14 @@ export class ProjectGallery extends Component {
       <article class="proj reveal">
         <div class="proj__media">
           <div class="proj__ph">${Component.esc(p.name[0].toUpperCase())}</div>
-          <img data-srcs="${Component.esc(JSON.stringify(this.#imageCandidates(p)))}" alt="" loading="lazy">
+          <img data-srcs="${Component.esc(JSON.stringify(this.#imageCandidates(p)))}" alt="" loading="lazy" decoding="async">
         </div>
         <div class="proj__body">
           <div class="proj__top"><span class="label">${String(i + 1).padStart(2, "0")}</span><span class="label">${p.year}</span></div>
           <h3>${Component.esc(p.title)}</h3>
           <p>${Component.esc(p.summary)}</p>
           <dl class="meta">
-            <dt class="label">ภาษา</dt><dd>${tags(p.language ? [p.language] : [], "tag--lang")}</dd>
+            <dt class="label">ภาษา</dt><dd>${tags([].concat(p.language || []), "tag--lang")}</dd>
             <dt class="label">เครื่องมือ</dt><dd>${tags(p.tools)}</dd>
           </dl>
           <div class="proj__actions">

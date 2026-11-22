@@ -2,13 +2,27 @@
 const A = n => `assets/img/Activity/activity-${n}.jpg`;
 const C = (n, ext = "jpg") => `assets/img/Certificate/Certificate-${n}.${ext}`;
 
+/** ภาพย่อ (โหลดเร็ว) อยู่ใน assets/img/thumbs/ — ภาพเต็มใช้ตอนกดขยาย */
+const thumb = p => p.replace("assets/img/", "assets/img/thumbs/").replace(/\.png$/, ".jpg");
+
 export const githubConfig = {
   username: "Peeranat-Non",
+  // เลือกเฉพาะโปรเจกต์ที่จะโชว์ (เรียงตามลำดับที่ใส่) เช่น ["LegoShopDB-POS", "Portfolio.github.io"]
+  // ปล่อยว่าง [] = แสดงทุก repo สาธารณะ
+  include: [],
   featured: [],   // ชื่อ repo ที่อยากให้ขึ้นก่อน เช่น ["my-best-project"]
   exclude: [],
   // กำหนดรูปเอง (ไม่บังคับ): { "ชื่อ repo": "assets/img/projects/xxx.jpg" }
   // ถ้าไม่ตั้ง เว็บจะหาไฟล์ assets/img/projects/<ชื่อ repo>.jpg|png|webp ให้อัตโนมัติ
-  images: {},    // ชื่อ repo ที่ไม่อยากแสดง
+  images: {},
+  // แก้ข้อมูลโปรเจกต์เอง (ไม่บังคับ) — ใช้ชื่อ repo เป็นคีย์ ใส่เฉพาะช่องที่อยากแก้
+  // language: ข้อความหรือรายการ ["C#", "SQL"] | tools: เครื่องมือ | description | displayName | image | homepage
+  overrides: {
+    "LegoShopDB-POS": {
+      language: "C#",
+      tools: ["Windows Forms", ".NET", "Entity Framework Core"],
+    },
+  },    // ชื่อ repo ที่ไม่อยากแสดง
 };
 
 export const nav = [
@@ -80,3 +94,6 @@ export const certificates = [
 export const fallbackProjects = [
   { name: "Portfolio.github.io", description: "เว็บไซต์ Portfolio ส่วนตัว สร้างด้วย HTML, CSS, JavaScript และเผยแพร่ผ่าน GitHub Pages", language: "HTML", tools: ["CSS", "JavaScript", "Bootstrap", "GitHub Pages"], image: "", url: "https://github.com/Peeranat-Non/Portfolio.github.io", homepage: "https://peeranat-non.github.io/Portfolio.github.io/", updated: "2026-11-01" },
 ];
+
+activities.forEach(a => { a.thumb = thumb(a.img); });
+certificates.forEach(c => { c.thumb = thumb(c.img); });

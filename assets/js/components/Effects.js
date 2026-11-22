@@ -2,11 +2,14 @@
 export class ScrollProgress {
   mount() {
     const bar = document.querySelector("#progress");
+    let queued = false;
     const update = () => {
+      queued = false;
       const max = document.documentElement.scrollHeight - innerHeight;
       bar.style.transform = `scaleX(${max > 0 ? scrollY / max : 0})`;
     };
-    addEventListener("scroll", update, { passive: true }); update();
+    addEventListener("scroll", () => { if (!queued) { queued = true; requestAnimationFrame(update); } }, { passive: true });
+    update();
   }
 }
 
@@ -18,7 +21,7 @@ export class Parallax {
     addEventListener("scroll", () => {
       if (ticking) return; ticking = true;
       requestAnimationFrame(() => {
-        this.items.forEach(el => { el.style.transform = `translateY(${scrollY * Number(el.dataset.parallax)}px)`; });
+        if (scrollY < innerHeight * 1.5) this.items.forEach(el => { el.style.transform = `translateY(${scrollY * Number(el.dataset.parallax)}px)`; });
         ticking = false;
       });
     }, { passive: true });

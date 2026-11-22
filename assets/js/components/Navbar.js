@@ -6,12 +6,15 @@ export class Navbar extends Component {
     this.root.innerHTML = `<a class="nav__logo" href="#hero">${Component.esc(this.brand)}</a>
       <ul>${this.links.map(l => `<li><a href="#${l.id}">${Component.esc(l.label)}</a></li>`).join("")}</ul>`;
     let last = 0;
-    addEventListener("scroll", () => {
+    let queued = false;
+    const onScroll = () => {
+      queued = false;
       const y = scrollY;
       this.root.classList.toggle("is-solid", y > 40);
       this.root.classList.toggle("is-hidden", y > last && y > 320); // hide on scroll down, show on scroll up
       last = y;
-    }, { passive: true });
+    };
+    addEventListener("scroll", () => { if (!queued) { queued = true; requestAnimationFrame(onScroll); } }, { passive: true });
     this.#trackActive();
   }
   #trackActive() {

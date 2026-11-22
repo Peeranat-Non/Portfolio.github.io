@@ -20,7 +20,7 @@ export class ActivitySection extends Component {
   render() {
     this.root.innerHTML = this.items.map(a => `
       <li class="reveal"><h3>${Component.esc(a.title)}</h3><p>${Component.esc(a.text)}</p>
-        <img src="${Component.esc(a.img)}" alt="" loading="lazy"></li>`).join("");
+        <img src="${Component.esc(a.thumb || a.img)}" alt="" loading="lazy" decoding="async"></li>`).join("");
   }
 }
 
@@ -38,7 +38,7 @@ export class CertificateSection extends Component {
   render() {
     this.root.innerHTML = this.items.map(c => `
       <a class="cert reveal" href="${Component.esc(c.img)}" data-title="${Component.esc(c.title)}">
-        <div class="cert__img"><img src="${Component.esc(c.img)}" alt="" loading="lazy"></div>
+        <div class="cert__img"><img src="${Component.esc(c.thumb || c.img)}" alt="" loading="lazy" decoding="async"></div>
         <h3>${Component.esc(c.title)}</h3></a>`).join("");
     this.root.addEventListener("click", e => {
       const a = e.target.closest(".cert"); if (!a) return;
